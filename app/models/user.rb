@@ -9,5 +9,4 @@ class User < ApplicationRecord
   include DeviseTokenAuth::Concerns::User
 
   has_many :events, dependent: :destroy
-
 end
